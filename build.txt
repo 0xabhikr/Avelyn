@@ -1,0 +1,7 @@
+release build
+
+go build -o Avelyn.exe -ldflags="-s -w"
+
+debug build
+
+go build -o Avelyn-debug.exe -gcflags="all=-N -l"
