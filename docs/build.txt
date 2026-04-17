@@ -1,12 +1,15 @@
-release build
+build:
+	go build -o avelyn -ldflags="-s -w" .
 
-go build -o Avelyn.exe -ldflags="-s -w"
+debug:
+	go build -o avelyn-debug -gcflags="all=-N -l" .
 
-debug build
+windows:
+	go build -o avelyn.exe -ldflags="-s -w" .
 
-go build -o Avelyn-debug.exe -gcflags="all=-N -l"
+linux:
+	go build -o avelyn -ldflags="-s -w" .
+	chmod +x avelyn
+    ./avelyn test.lyn
 
 
-For linux
-chmod +x avelyn
-./avelyn test.lyn
