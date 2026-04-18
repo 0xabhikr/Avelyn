@@ -8,9 +8,9 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Krisp Interpreter")
-		fmt.Println("Usage: krisp <path_to_file>")
-		fmt.Println("Example: ./krisp test.ave")
+		fmt.Println("Avelyn Interpreter")
+		fmt.Println("Usage: Avelyn <path_to_file>")
+		fmt.Println("Example: ./Avelyn test.ave")
 		return
 	}
 
